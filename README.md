@@ -1,59 +1,108 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# FitPlanner
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="/public/images/icons/temaki--gym.png" alt="FitPlanner Logo" width="200">
 </p>
 
-## About Laravel
+O FitPlanner é uma aplicação web desenvolvida para gerenciar e acompanhar sua jornada fitness. Com ele, você pode encontrar academias, gerenciar seus treinos e acompanhar seu progresso de forma simples e intuitiva.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Funcionalidades
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- 🔍 **Busca de Academias**: Encontre a academia perfeita para você
+- 📅 **Gerenciamento de Treinos**: Acompanhe sua rotina de exercícios
+- 📈 **Acompanhamento de Progresso**: Visualize sua evolução ao longo do tempo
+- 👤 **Sistema de Usuários**: Login e gerenciamento de perfil
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Tecnologias Utilizadas
 
-## Learning Laravel
+- [Laravel](https://laravel.com/) - Framework PHP
+- [Blade](https://laravel.com/docs/blade) - Template Engine
+- HTML5 & CSS3
+- JavaScript
+- [Font Awesome](https://fontawesome.com/) - Ícones
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 📋 Pré-requisitos
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- PHP >= 8.1
+- Composer
+- Node.js
+- MySQL ou outro banco de dados compatível
+- npm ou yarn
 
-## Laravel Sponsors
+## 🔧 Instalação
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Clone o repositório:
+```bash
+git clone https://github.com/Geanoff/FitPlanner.git
+```
 
-### Premium Partners
+2. Entre no diretório do projeto:
+```bash
+cd FitPlanner
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+3. Instale as dependências do PHP:
+```bash
+composer install
+```
 
-## Contributing
+4. Instale as dependências do Node.js:
+```bash
+npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+5. Copie o arquivo de ambiente:
+```bash
+cp .env.example .env
+```
 
-## Code of Conduct
+6. Gere a chave da aplicação:
+```bash
+php artisan key:generate
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+7. Configure o banco de dados no arquivo `.env`
 
-## Security Vulnerabilities
+8. Execute as migrations:
+```bash
+php artisan migrate
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 Executando o projeto
 
-## License
+1. Inicie o servidor Laravel:
+```bash
+php artisan serve
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. Em outro terminal, compile os assets:
+```bash
+npm run dev
+```
+
+A aplicação estará disponível em `http://localhost:8000`
+
+## 📝 Estrutura do Projeto
+
+- `app/` - Contém os controllers, models e providers
+- `database/` - Migrations e seeders
+- `public/` - Assets públicos (CSS, JS, imagens)
+- `resources/` - Views Blade, arquivos CSS e JS não compilados
+- `routes/` - Definições de rotas
+- `tests/` - Testes automatizados
+
+## 🤝 Contribuindo
+
+1. Faça um fork do projeto
+2. Crie sua feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## ✨ Autor
+
+Desenvolvido por Gean
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
