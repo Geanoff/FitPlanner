@@ -1,0 +1,138 @@
+@import url(section-hero.css);
+@import url(cards-sections.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--cor-preta);
+    height: 70px;
+    border-bottom: 1px solid var(--cor-borda-verde);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+header .container {
+    height: 100%;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: var(--cor-verde);
+}
+
+header .auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 span {
+    color: var(--cor-verde);
+    font-weight: 700;
+}
+
+p {
+    color: var(--cor-cinza);
+    font-size: clamp(13px, 5vw, 18px);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #15181d;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding: 50px 0;
+    color: var(--cor-cinza);
+}
+
+footer .logo-fit-planner h1 {
+    font-size: 17px;
+}
+
+footer .logo-fit-planner h1 span {
+    font-size: 17px;
+}
+
+footer .item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+}
+
+footer .item .social-medias {
+    display: flex;
+    gap: 25px;
+}
+
+footer .item .social-medias a {
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    /* background-color: red; */
+}
+
+footer .item .social-medias a:hover {
+    background-color: rgba(34, 195, 93, 0.2);
+}
+
+footer .item .social-medias img {
+  width: 25px;
+}
+
+footer .item h4 {
+    color: aliceblue;
+    font-weight: 500;
+}
+
+footer .item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .item ul li {
+    font-size: 14px;
+}
+
+footer .footer-direitos {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer .footer-direitos .termos {
+    display: flex;
+    gap: 15px;
+}

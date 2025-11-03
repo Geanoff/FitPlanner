@@ -1,0 +1,79 @@
+/* Logo */
+.logo-fit-planner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-fit-planner h1,
+.logo-fit-planner h1 span {
+    color: aliceblue;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-fit-planner h1 span {
+    color: var(--cor-verde);
+}
+
+.logo-fit-planner img {
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-borda-verde); 
+    background-color: var(--cor-verde-transparente);
+}
+
+
+/* Buttons */
+.btn {
+    display: flex;
+    background: none;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 9px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn i {
+    transition: .3s;
+}
+
+.btn:hover i {
+    transform: translateX(3px);
+}
+
+.btn-primary {
+    background-color: var(--cor-verde);
+    color: var(--cor-preta);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0px 30px rgba(28, 202, 92, 0.4);
+}
+
+.btn-secondary {
+    background: none;
+    color: aliceblue;
+}
+
+.btn-secondary:hover {
+    background-color: var(--cor-verde);
+    color: var(--cor-preta);
+}
+
+.btn-outline {
+    border: 1px solid var(--cor-borda-verde);
+}
+
+.btn-outline:hover {
+    background-color: var(--cor-verde-transparente);
+}

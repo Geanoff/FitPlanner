@@ -1,0 +1,56 @@
+#hero {
+    position: relative;
+    height: 100vh;
+    /* margin-top: 70px; */
+    background: url('/images/fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(360deg, rgba(17, 19, 23, 1) 1%, rgba(17, 19, 23, 0) 100%);
+    background-color: rgba(17, 19, 23, 0.5);
+}
+
+#hero h1 {
+    font-size: clamp(28px, 5vw, 60px);
+    z-index: 2;
+}
+
+#hero .container {
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+#hero .container h1,
+#hero .container p,
+#hero .stats,
+#hero a {
+    max-width: 700px;
+    z-index: 2;
+}
+
+#hero .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid var(--cor-borda-verde);
+    padding-top: 30px;
+}
+
+#hero .stats h2 {
+    color: var(--cor-verde);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#hero .stats small {
+    color: var(--cor-cinza);
+}
