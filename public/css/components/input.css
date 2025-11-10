@@ -1,0 +1,41 @@
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+    position: relative;
+}
+
+.input-box label {
+    color: aliceblue;
+    font-size: 14px;
+}
+
+.input-box label>span {
+    color: var(--cor-vermelho);
+}
+
+.input-box i {
+    position: absolute;
+    top: calc(50% + 5px);
+    left: 10px;
+    color: var(--cor-cinza);
+}
+
+.input-box input,
+.input-box textarea {
+    padding: 10px;
+    padding-left: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2c2f38;
+    color: aliceblue;
+    font-size: 13px;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: var(--cor-cinza);
+    font-size: 13px;
+}
