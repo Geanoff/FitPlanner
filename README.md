@@ -84,4 +84,4 @@ Desenvolvido por Gean Augusto
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para mais detalhes.
+Projeto acadêmico, uso livre para fins de estudo
