@@ -1,0 +1,48 @@
+@import url(components/main.css);
+
+:root {
+    --cor-preta: #111317;
+    --cor-cinza: #a6a6a6;
+    --cor-verde: #1cca5b;
+    --cor-vermelho: #ff4d4d;
+    --cor-verde-transparente: rgba(34, 195, 93, 0.1);
+    --cor-borda-verde: rgba(34, 195, 93, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+body {
+    background: linear-gradient(to bottom right, #111317 0%, #1a1d23 50%, #111317 100%);
+    color: white;
+    background-attachment: fixed;
+}
+
+header, main, section, footer {
+    width: 100%;
+    padding: 0 10px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
