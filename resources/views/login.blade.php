@@ -46,7 +46,7 @@
         <button class="btn btn-primary">Entrar</button>
     </form>
     <!-- Cadastro -->
-    <form id="form-cadastro" method="POST">
+    <form id="form-cadastro" method="POST" action="/cadastrar">
         @csrf
         <h1>Criar conta</h1>
         <span>Comece sua jornada fitness hoje</span>
