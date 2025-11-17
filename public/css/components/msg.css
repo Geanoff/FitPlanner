@@ -1,0 +1,13 @@
+.msg {
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.msg.sucess {
+    background-color: rgba(28, 202, 92, 0.7);
+}
+
+.msg.error {
+    background-color: rgba(255, 77, 77, 0.7);
+}

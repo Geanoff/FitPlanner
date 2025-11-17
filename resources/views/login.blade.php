@@ -20,6 +20,16 @@
 </head>
 
 <body>
+    @if(session('success'))
+    <div class="msg sucess">
+        <p>{{ session('success') }}</p>
+    </div>
+    @endif
+    @if ($errors->any())
+    <div class="msg error">
+        <p>Erro, tente novamente!</p>
+    </div>
+    @endif
     <div class="logo-fit-planner">
         <img src="/images/icons/logo.png" alt="FitPlanner">
         <h1>Fit<span>Planner</span></h1>
@@ -29,7 +39,7 @@
         <button>Cadastro</button>
     </div>
     <!-- Login -->
-    <form id="form-login" method="POST">
+    <form id="form-login" method="POST" action="/login">
         @csrf
         <h1>Bem-vindo de volta</h1>
         <span>Entre com suas credenciais para continuar</span>
