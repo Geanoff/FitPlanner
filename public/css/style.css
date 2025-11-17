@@ -7,6 +7,9 @@
     --cor-vermelho: #ff4d4d;
     --cor-verde-transparente: rgba(34, 195, 93, 0.1);
     --cor-borda-verde: rgba(34, 195, 93, 0.2);
+
+    --background: hsl(220, 15%, 8%);
+    --border: rgb(48, 53, 65);
 }
 
 * {

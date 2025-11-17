@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AlunoController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,5 @@ Route::get('/academia/cadastro', function () {
 Route::get('/aluno/dashboard', function () {
     return view('aluno.dashboard');
 });
+Route::get('/aluno/perfil', [AlunoController::class, 'perfil'])->name('aluno.perfil');
+    Route::put('/aluno/update', [AlunoController::class, 'update'])->name('aluno.update');

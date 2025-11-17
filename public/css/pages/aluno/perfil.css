@@ -1,0 +1,74 @@
+header {
+    background-color: var(--background);
+    height: 70px;
+    border-bottom: 1px solid var(--border);
+}
+
+header .container {
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+}
+
+header .container .btn-primary {
+    margin-left: auto;
+}
+
+/* Main */
+main {
+    padding-block: 40px;
+    width: 100%;
+}
+
+main .container {
+    flex-direction: column;
+    width: 100%;
+}
+
+main h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+main span {
+    color: var(--cor-cinza);
+    font-size: 15px;
+}
+
+main .perfil {
+    display: flex;
+    gap: 30px;
+}
+
+.perfil .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background-color: rgba(21, 24, 29, .3);
+}
+
+.perfil .foto p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.perfil .foto img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.perfil form {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background-color: rgba(21, 24, 29, .3);
+}
+
+.perfil form button {
+    margin-top: 20px;
+    width: 100%;
+}
