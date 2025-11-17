@@ -64,6 +64,12 @@
                     <button class="btn btn-primary">Salvar Alterações</button>
                 </form>
             </div>
+            <form action="{{ route('aluno.destroy') }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir sua conta?');">
+                @csrf
+                @method('DELETE')
+                <button class="btn btn-danger">Excluir Conta</button>
+            </form>
+
         </div>
     </main>
 </body>

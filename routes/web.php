@@ -22,4 +22,5 @@ Route::get('/aluno/dashboard', function () {
     return view('aluno.dashboard');
 });
 Route::get('/aluno/perfil', [AlunoController::class, 'perfil'])->name('aluno.perfil');
-    Route::put('/aluno/update', [AlunoController::class, 'update'])->name('aluno.update');
+Route::put('/aluno/update', [AlunoController::class, 'update'])->name('aluno.update');
+Route::delete('/aluno/delete', [AlunoController::class, 'destroy'])->name('aluno.destroy');

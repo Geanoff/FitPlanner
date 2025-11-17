@@ -29,4 +29,16 @@ class AlunoController extends Controller
 
         return redirect()->route('aluno.perfil')->with('success', 'Perfil atualizado com sucesso!');
     }
+
+    public function destroy()
+    {
+        $usuario = Auth::user();
+
+        if ($usuario) {
+            User::destroy($usuario->id);
+            Auth::logout();
+        }
+
+        return redirect('/login')->with('success', 'Conta excluída com sucesso!');
+    }
 }

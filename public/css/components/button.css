@@ -49,3 +49,14 @@
 .btn-outline:hover {
     background-color: var(--cor-verde-transparente);
 }
+
+/* Botão 3 */
+.btn-danger {
+    background-color: var(--cor-vermelho);
+}
+
+.btn-danger:hover {
+    background-color: var(--cor-vermelho);
+    filter: brightness(.9);
+    transform: translateY(-2px);
+}
