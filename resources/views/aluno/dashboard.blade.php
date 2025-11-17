@@ -31,7 +31,7 @@
     <main>
         <div class="container">
             <div>
-                <h1>Bem-vindo, Gean!</h1>
+                <h1>Bem-vindo, Aluno!</h1>
                 <span>Sua jornada fitness começa aqui</span>
             </div>
             <div class="grid">
